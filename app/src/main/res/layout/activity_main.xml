@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY PRODUCTIVITY"
+            android:textColor="#23865B"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.12"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Work List"
+            android:textColor="#172B23"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Small steps. Big progress."
+            android:textColor="#718078"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Add task section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add a new task"
+            android:textColor="#263B31"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/taskInput"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_task_input"
+            android:hint="What do you need to do?"
+            android:inputType="textCapSentences"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textColor="#172B23"
+            android:textColorHint="#89958E"
+            android:textSize="15sp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/addTaskButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#23865B"
+            android:text=" +   Add Task"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Task list heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your tasks"
+            android:textColor="#172B23"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Filters -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnAll"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:text="All"
+                android:textAllCaps="false"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnPending"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:text="Pending"
+                android:textAllCaps="false"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btnCompleted"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:text="Completed"
+                android:textAllCaps="false"
+                android:textSize="13sp" />
+
+
+            <Button
+                android:id="@+id/btnMorningRoutine"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#E4F2E7"
+                android:text="☀  Morning Routine and Reminders"
+                android:textAllCaps="false"
+                android:textColor="#183D2B"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Empty state -->
+        <TextView
+            android:id="@+id/emptyMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No tasks here yet. Add one to get started!"
+            android:textColor="#718078"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:padding="20dp" />
+
+        <!-- Dynamic task rows -->
+        <LinearLayout
+            android:id="@+id/taskContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+</ScrollView>

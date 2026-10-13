@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F8F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Morning Routine"
+            android:textColor="#183D2B"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Choose when WorkList should help you start your day."
+            android:textColor="#617267"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Your usual wake-up time"
+            android:textColor="#183D2B"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnWakeTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Wake-up time: 07:00"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Remind me after waking up"
+            android:textColor="#183D2B"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgReminderDelay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb15Minutes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15 minutes later" />
+
+            <RadioButton
+                android:id="@+id/rb30Minutes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="30 minutes later" />
+
+            <RadioButton
+                android:id="@+id/rb1Hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 hour later" />
+
+            <RadioButton
+                android:id="@+id/rb90Minutes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 hour 30 minutes later" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvReminderPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:background="#E4F2E7"
+            android:text="Your morning reminder: 07:30"
+            android:textColor="#183D2B"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSaveReminderSettings"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="28dp"
+            android:text="Save Morning Routine"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</ScrollView>
